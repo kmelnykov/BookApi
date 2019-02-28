@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Book form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+</head>
+<body>
+    <h2>Book add form</h2>
+    
+    <form id="book-form">
+        <input type="hidden" name="id" value="0" />
+        <div class="form-group">
+            <label for="name">Name: </label>
+            <input class="form-control" name="name" />
+        </div>
+        <div class="form-group">
+            <label for="author">Author: </label>
+            <input class="form-control" name="author" />
+        </div>
+        <div class="form-group">
+            <label for="price">Price: </label>
+            <input type="number" class="form-control" name="price" />
+        </div>
+        <div class="form-group">
+            <label for="description">Description: </label>
+            <input class="form-control" name="description" />
+        </div>
+        <div class="panel-body">
+            <button type="submit" class="btn btn-sm btn-primary">Add</button>
+        </div>
+    </form>
+
+            <script src="js/index.js">
+                $("#book-form").submit(function (e) {
+                    e.preventDefault();
+                    //let name = this.elements["name"].value;
+                    //let author = this.elements["author"].value;
+                    //let price = this.elements["price"].value;
+                    //let description = this.elements["description"].value;
+                    //CreateUser(name, author, price, description);
+                    alert("Handler for .submit() called.");
+                })
+            </script>
+</body>
+</html>
